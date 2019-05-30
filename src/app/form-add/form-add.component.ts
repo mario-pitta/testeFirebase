@@ -22,9 +22,9 @@ export class FormAddComponent implements OnInit {
   ngOnInit() {
     console.log(this.doc)
     if(this.doc){
-        this.born = this.doc.born;
-        this.first = this.doc.first;
-        this.last = this.doc.last;
+        this.born = this.doc.data().born;
+        this.first = this.doc.data().first;
+        this.last = this.doc.data().last;
     }
   }
 
